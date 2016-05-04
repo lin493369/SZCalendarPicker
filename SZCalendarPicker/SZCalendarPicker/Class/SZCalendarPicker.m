@@ -42,7 +42,7 @@ NSString *const SZCalendarCellIdentifier = @"cell";
 - (void)customInterface
 {
     CGFloat itemWidth = _collectionView.frame.size.width / 7;
-    CGFloat itemHeight = _collectionView.frame.size.height / 7;
+    CGFloat itemHeight = _collectionView.frame.size.height / 7+36;
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     layout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
@@ -137,18 +137,23 @@ NSString *const SZCalendarCellIdentifier = @"cell";
     if (indexPath.section == 0) {
         [cell.dateLabel setText:_weekDayArray[indexPath.row]];
         [cell.dateLabel setTextColor:[UIColor colorWithHexString:@"#15cc9c"]];
+        [cell.circleView setHidden:YES];
     } else {
+
         NSInteger daysInThisMonth = [self totaldaysInMonth:_date];
         NSInteger firstWeekday = [self firstWeekdayInThisMonth:_date];
         
         NSInteger day = 0;
         NSInteger i = indexPath.row;
-        
+        cell.circleView.tipLabel.text = @"1";
+
         if (i < firstWeekday) {
             [cell.dateLabel setText:@""];
-            
+            [cell.circleView setHidden:YES];
+
         }else if (i > firstWeekday + daysInThisMonth - 1){
             [cell.dateLabel setText:@""];
+            [cell.circleView setHidden:YES];
         }else{
             day = i - firstWeekday + 1;
             [cell.dateLabel setText:[NSString stringWithFormat:@"%i",day]];
@@ -159,6 +164,7 @@ NSString *const SZCalendarCellIdentifier = @"cell";
                 if (day == [self day:_date]) {
                     [cell.dateLabel setTextColor:[UIColor colorWithHexString:@"#4898eb"]];
                 } else if (day > [self day:_date]) {
+                    [cell.circleView setHidden:YES];
                     [cell.dateLabel setTextColor:[UIColor colorWithHexString:@"#cbcbcb"]];
                 }
             } else if ([_today compare:_date] == NSOrderedAscending) {

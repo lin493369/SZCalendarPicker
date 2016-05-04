@@ -20,6 +20,7 @@
 		77B46C2E1A2C06280057750C /* SZCalendarPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77B46C2A1A2C06280057750C /* SZCalendarPicker.xib */; };
 		77B46C311A2C07610057750C /* SZCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B46C301A2C07610057750C /* SZCalendarCell.m */; };
 		77B46C361A2C0FF40057750C /* UIColor+ZXLazy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B46C351A2C0FF40057750C /* UIColor+ZXLazy.m */; };
+		84CDEC311CD9F8E70042BA03 /* NTDCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CDEC2F1CD9F8E70042BA03 /* NTDCircleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		77B46C301A2C07610057750C /* SZCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZCalendarCell.m; sourceTree = "<group>"; };
 		77B46C341A2C0FF40057750C /* UIColor+ZXLazy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZXLazy.h"; sourceTree = "<group>"; };
 		77B46C351A2C0FF40057750C /* UIColor+ZXLazy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZXLazy.m"; sourceTree = "<group>"; };
+		84CDEC2F1CD9F8E70042BA03 /* NTDCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTDCircleView.m; sourceTree = "<group>"; };
+		84CDEC301CD9F8E70042BA03 /* NTDCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTDCircleView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +141,8 @@
 		77B46C241A2C06280057750C /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				84CDEC301CD9F8E70042BA03 /* NTDCircleView.h */,
+				84CDEC2F1CD9F8E70042BA03 /* NTDCircleView.m */,
 				77B46C341A2C0FF40057750C /* UIColor+ZXLazy.h */,
 				77B46C351A2C0FF40057750C /* UIColor+ZXLazy.m */,
 				77B46C251A2C06280057750C /* Resource */,
@@ -266,6 +271,7 @@
 				77B46C021A2BFE710057750C /* ViewController.m in Sources */,
 				77B46BFF1A2BFE710057750C /* AppDelegate.m in Sources */,
 				77B46C361A2C0FF40057750C /* UIColor+ZXLazy.m in Sources */,
+				84CDEC311CD9F8E70042BA03 /* NTDCircleView.m in Sources */,
 				77B46C2D1A2C06280057750C /* SZCalendarPicker.m in Sources */,
 				77B46BFC1A2BFE710057750C /* main.m in Sources */,
 			);

@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "NTDCircleView.h"
 @interface SZCalendarCell : UICollectionViewCell
 @property (nonatomic , strong) UILabel *dateLabel;
+@property (nonatomic , strong) NTDCircleView *circleView;
+
 @end
